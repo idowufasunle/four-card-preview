@@ -1,0 +1,124 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  /* colors */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Grey500: hsl(234, 12%, 34%);
+  --Grey400: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+
+  /* font */
+
+  min-height: 100dvh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* reset */
+h1, h2, h3, h4, h5, h6, p, div, span, img {
+  margin: 0;
+  padding: 0;
+}
+
+.root{
+    padding-inline: 1rem;
+}
+
+/* BEM Header */
+.page-header{
+    margin-block: 40px;
+    text-align: center;
+}
+
+.page-header__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: var(--Grey400);
+    text-align: center;
+}
+
+.page-header__subtitle{
+    font-size: 2.1rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: var(--Grey500);
+    text-align: center;
+}
+
+.page-header__description{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--Grey400);
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* BEM Card */
+.card {
+  border-radius: 10px;
+  padding-inline: 25px;
+  padding-top: 30px;
+    padding-bottom: 40px;
+  border-top: 4px solid var(--Red);
+
+  /* shadow */
+  box-shadow: 6px 5px 41px -7px rgba(105, 112, 119, 0.79);
+  -webkit-box-shadow: 6px 5px 41px -7px rgba(105, 112, 119, 0.79);
+  -moz-box-shadow: 6px 5px 41px -7px rgba(105, 112, 119, 0.79);
+
+  margin-bottom: 20px;
+}
+
+.card--supervisor {
+    border-top-color: var(--Cyan);
+}
+
+
+.card--karma {
+    border-top-color: var(--Orange);
+}
+
+.card--calculator {
+    border-top-color: var(--Blue);
+}
+
+.card__header {
+    margin-bottom: 20px;
+}
+.card__title {
+    font-size: 1.85rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--Grey500);
+
+}
+.card__description {
+      font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: var(--Grey400);
+}
+
+.image__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.card__image {
+    width: 64px;
+    aspect-ratio: 1;
+}
