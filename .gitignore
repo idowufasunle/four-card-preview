@@ -38,3 +38,82 @@ npm-debug.log*
 *.pem
 .DS_Store
 Thumbs.db
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="stylesheet" href="style.css"> 
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+   
+  
+</head>
+<body class="root">
+  <div class="card_wrapper">
+    <div class="card">
+      <h3 class="header">Re efficient delivery</h3>
+      <h3>Powered by Technology</h3>
+      
+      <p class="comment"> Artificial Intelligence powered tools use millions of project data points
+      to ensure that your project is successful</p>
+
+      <div class="supervisor">
+        <h3 class="hearder">Supervisor</h3>
+          <p class="comment">Monitors activity to identify project roadblocks</p>
+
+          <img class="icons" src="/images/icon-supervisor.svg" />
+
+      </div>
+
+      <div class="team_builder">
+        <h3 class="header">Team Builder</h3>
+        <p class="comment">Scans our talent network to create the optimal team for your project</p>
+
+       <img class="icons" src="/images/icon-team-builder.svg"/>
+
+      </div>
+
+      <div class="karma">
+        <h3 class="header">Karma</h3>
+        <p class="comment">Regularly evaluates our talent to ensure quality</p>
+
+        <img class="icons" src="/images/icon-karma.svg"/>
+
+      </div>
+
+      <div class="calculator">
+        <h3 class="header">Calculator</h3>
+        <p class="comment">Uses data from past projects to provide better delivery estimates</p>
+
+        <img class="icons" src="/images/icon-calculator.svg"/>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Idowu Fasunle</a>.
+    </p>
+  </footer>
+</body>
+</html>
