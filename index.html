@@ -1,121 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Frontend Mentor | Four card feature section</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            red:'hsl(0, 78%, 62%)',
-            white: 'hsl(0, 0%, 100%)',
-            cyan: 'hsl(180, 62%, 55%)',
-            orange: 'hsl(34, 97%, 64%)',
-            blue: 'hsl(212, 86%, 64%)',
-            grey_medium: 'hsl(234, 12%, 34%)',
-            light_grey: 'hsl(212, 6%, 44%)',
-
+    <title>Frontend Mentor | Four card feature section</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              red: "hsl(0, 78%, 62%)",
+              white: "hsl(0, 0%, 100%)",
+              cyan: "hsl(180, 62%, 55%)",
+              orange: "hsl(34, 97%, 64%)",
+              blue: "hsl(212, 86%, 64%)",
+              grey_medium: "hsl(234, 12%, 34%)",
+              light_grey: "hsl(212, 6%, 44%)",
+            },
+            fontFamily: {
+              display: ['"Poppins"', "sans-serif"], // Custom utility: font-display
+            },
           },
-          fontFamily: {
-        display: ['"Poppins"', 'sans-serif'], // Custom utility: font-display
-      }
-        }
-      }
-    }
-  </script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        },
+      };
+    </script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
 
-
-</head>
-
-<body class="root min-h-dvh font-display">
-
-  <div class="cards__wrapper text-light_grey font-normal flex justify-center items-center flex-col gap-8 p-4">
-    <div class="page-header text-center">
-      <h1 class="page-header__title text-4xl my-2">Reliable, efficient delivery</h1>
-      <b class="page-header__subtitle font-bold text-grey_medium text-4xl">Powered by Technology</b>
-      <p class="page-header__description max-w-[50ch]">Our Artificial Intelligence powered tools use millions of project data points
-      to ensure that your project is successful</p>
-    </div>
-    <div class="cards flex flex-col md:flex-row justify-content gap-4 p-4">
-
-
-      <!-- CARD BLOCK e.g card -->
-      <!-- CARD ELEMENT e.g card__title -->
-      <!-- CARD MODIFIERS e.g card--team-builder -->
-
-      <div class="card card--supervisor rounded-lg p-6 bg-white border-t-4 border-cyan hover:bg-cyan/5 shadow-lg shadow-cyan/10 h-full w-sm md:w-md sm:w-sm flex flex-col justify-between gap-8 m-auto">
-        <div class="card__header">
-          <h3 class="card__title font-bold text-grey_medium">Supervisor</h3>
-          <p class="card__description text-lg min-w-[30ch] mt-2">Monitors activity to identify project roadblocks</p>
-        </div>
-
-        <div class="card__body">
-          <div class="image__wrapper justify-self-end w-[64px] aspect-square" >
-            <img src="./images/icon-supervisor.svg" alt="supervisor" class="card__image">
-          </div>
-        </div>
+  <body class="root grid h-dvh max-w-3/4 mx-auto font-display">
+    <div class="cards__wrapper text-light_grey font-normal p-4">
+      <div class="page-header text-center mb-6">
+        <h1 class="page-header__title text-4xl my-2">
+          Reliable, efficient delivery
+        </h1>
+        <b class="page-header__subtitle font-bold text-grey_medium text-4xl"
+          >Powered by Technology</b
+        >
+        <p class="page-header__description max-w-[50ch] mx-auto"> 
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
       </div>
 
-      <div class="cards__center flex flex-col gap-8">
-        <div class="card rounded-lg p-6 bg-white border-t-4 border-red hover:bg-red/5 shadow-lg shadow-red/10 h-full w-sm md:w-md sm:w-sm flex flex-col justify-between gap-4 m-auto">
+      <div
+        class="cards flex flex-col md:flex-row justify-content items-center gap-4"
+      >
+        <!-- CARD BLOCK e.g card -->
+        <!-- CARD ELEMENT e.g card__title -->
+        <!-- CARD MODIFIERS e.g card--team-builder -->
+
+        <div
+          class="card card--supervisor rounded-lg p-6 bg-white border-t-4 border-cyan hover:bg-cyan/5 shadow-lg shadow-cyan/10 space-y-4 h-[180px]"
+        >
           <div class="card__header">
-            <h3 class="card__title font-bold text-grey_medium">Team Builder</h3>
-            <p class="card__description text-lg min-w-[30ch] mt-2">Scans our talent network to create the optimal team for your project</p>
+            <h3 class="card__title font-bold text-grey_medium">Supervisor</h3>
+            <p class="card__description text-lg min-w-[30ch] mt-2">
+              Monitors activity to identify project roadblocks
+            </p>
           </div>
-        
+
           <div class="card__body">
             <div class="image__wrapper justify-self-end w-[64px] aspect-square">
-              <img src="./images/icon-team-builder.svg" alt="Team Builder" class="card__image">
+              <img
+                src="./images/icon-supervisor.svg"
+                alt="supervisor"
+                class="card__image"
+              />
             </div>
           </div>
         </div>
 
-        <div class="card card--karma rounded-lg p-6 bg-white border-t-4 border-orange hover:bg-orange/5 shadow-lg shadow-orange/10 h-full w-sm md:w-md sm:w-sm flex flex-col justify-between gap-4 m-auto">
-          <div class="card__header">
-            <h3 class="card__title font-bold text-grey_medium">Karma</h3>
-            <p class="card__description text-lg min-w-[30ch] mt-2">Regularly evaluates our talent to ensure quality</p>
+        <div class="cards__center flex flex-col gap-8">
+          <div
+            class="card rounded-lg p-6 bg-white border-t-4 border-red hover:bg-red/5 shadow-lg shadow-red/10 space-y-4 h-[180px]"
+          >
+            <div class="card__header">
+              <h3 class="card__title font-bold text-grey_medium">
+                Team Builder
+              </h3>
+              <p class="card__description text-lg min-w-[30ch] mt-2">
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+            </div>
+
+            <div class="card__body">
+              <div
+                class="image__wrapper justify-self-end w-[64px] aspect-square"
+              >
+                <img
+                  src="./images/icon-team-builder.svg"
+                  alt="Team Builder"
+                  class="card__image"
+                />
+              </div>
+            </div>
           </div>
-        
+
+          <div
+            class="card card--karma rounded-lg p-6 bg-white border-t-4 border-orange hover:bg-orange/5 shadow-lg shadow-orange/10 space-y-4 h-[180px]"
+          >
+            <div class="card__header">
+              <h3 class="card__title font-bold text-grey_medium">Karma</h3>
+              <p class="card__description text-lg min-w-[30ch] mt-2">
+                Regularly evaluates our talent to ensure quality
+              </p>
+            </div>
+
+            <div class="card__body">
+              <div
+                class="image__wrapper justify-self-end w-[64px] aspect-square"
+              >
+                <img
+                  src="./images/icon-karma.svg"
+                  alt="Karma"
+                  class="card__image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card--calculator rounded-lg p-6 bg-white border-t-4 border-blue hover:bg-blue/5 shadow-lg shadow-blue/10 h-[180px]"
+        >
+          <div class="card__header">
+            <h3 class="card__title font-bold text-grey_medium">Calculator</h3>
+            <p class="card__description text-lg min-w-[30ch] mt-2">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+          </div>
+
           <div class="card__body">
             <div class="image__wrapper justify-self-end w-[64px] aspect-square">
-              <img src="./images/icon-karma.svg" alt="Karma" class="card__image">
+              <img
+                src="./images/icon-calculator.svg"
+                alt="Team Builder"
+                class="card__image"
+              />
             </div>
           </div>
         </div>
       </div>
-
-      <div class="card card--calculator rounded-lg p-6 bg-white border-t-4 border-blue hover:bg-blue/5 shadow-lg shadow-blue/10 h-full w-sm md:w-md sm:w-sm flex flex-col justify-between gap-4 m-auto">
-        <div class="card__header">
-          <h3 class="card__title font-bold text-grey_medium">Calculator</h3>
-          <p class="card__description text-lg min-w-[30ch] mt-2">Uses data from past projects to provide better delivery estimates</p>
-        </div>
-      
-        <div class="card__body">
-          <div class="image__wrapper justify-self-end w-[64px] aspect-square">
-            <img src="./images/icon-calculator.svg" alt="Team Builder" class="card__image">
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
